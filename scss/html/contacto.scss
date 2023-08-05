@@ -1,0 +1,184 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/*css contacto*/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .menu{
+        font-family: $fuente-principal;
+        background-color: $color-secundario;
+        .menu-dos{
+            display: flex;           
+            img{
+                height: 5rem;
+                width: 5rem;
+                margin-left: 1rem;                   
+            }
+            .button{
+                color: #6a330c;
+            }               
+        }        
+        .submenu{
+            ul{                
+                li{
+                    color:#6a330c;
+                    font-weight: bold;
+                    border-radius: 5px;
+                    transition: 0.3s;
+                    text-align: center;
+                    a{
+                        color:#6a330c;
+                    }
+                }
+                li:hover{ 
+                    background-color:rgb(94, 94, 37);
+                    color:#6a330c;
+                    transition: 0.5s;
+                }
+            }
+        }
+               
+    }
+}
+.main-cinco{
+    height: 120vh;
+    font-family: $fuente-principal;
+    h1{
+        @extend %estilos-h1;
+    }
+    h2{
+        @extend %estilos-h1;
+    }
+    .contacto{
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 35%;
+        gap: 2rem;
+        margin: 2rem;
+        justify-content: center;
+        .telefono{
+            justify-content: center; 
+            display: flex;
+            gap: 1rem;
+            padding-left: 1rem;
+            margin-top: 2rem;
+            .iconos{
+                img{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }                
+            }
+        }
+        p{
+            color: rgb(94, 94, 37);
+            font-size: 1.2rem;
+            font-weight: 600;
+            
+        }
+        .email{
+            justify-content: center; 
+            display: flex;
+            gap: 1rem;
+            padding-left: 1rem;
+            .iconos{
+                img{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }                
+            }
+        }
+        .ubicacion{
+            justify-content: center; 
+            display: flex;
+            gap: 1rem;
+            padding-left: 1rem;
+            .iconos{
+                img{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }                
+            }
+        }
+        .facebook{
+            justify-content: center; 
+            display: flex;
+            gap: 1rem;
+            padding-left: 1rem;
+            .iconos{
+                img{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }                
+            }
+        }
+        .instagram-contacto{
+            justify-content: center; 
+            display: flex;
+            gap: 1rem;
+            padding-left: 1rem;
+            .iconos{
+                img{
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }                
+            }
+        }
+        .formulario{
+            form{     
+                display: flex; 
+                flex-direction: column;                      
+                color: rgb(94, 94, 37);
+                font-size: 1.2rem;
+                font-weight: 600;
+                
+                fieldset{
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;                    
+                    legend{
+                        text-align: center;
+                        font-weight: 900;
+                        font-size: 1.5rem;
+                        color: #6a330c;                        
+                    }
+                    label{
+                        display: block;
+                        color: #6a330c;
+                    }
+                    .modificar-ancho{
+                        width: 250px;
+                    }           
+                    .consulta{
+                        padding: 3rem;
+                    } 
+                    .enviar{                
+                        input{                        
+                            color: #6a330c;
+                            font-weight: 600;  
+                            background-color: #c0c081;
+                            border: none;
+                            border-radius: 5%;
+                            transition: 0.5s;
+                        }
+                        input:hover{
+                            background-color:rgb(94, 94, 37);
+                            color:rgb(240, 240, 186);
+                            transition: 0.5s
+                        }                        
+                    }
+                }
+           }
+        }     
+        .mapa{
+            display: none;
+        }
+    }
+}
+
+
+

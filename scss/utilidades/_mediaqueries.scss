@@ -1,0 +1,328 @@
+/*mq tablet*/
+/*home*/
+@media screen and (min-width: 600px){
+    header{
+        .menu{
+            .submenu{
+                img{
+                    height: 4rem;
+                    width: 4rem;
+                }  
+            }                                  
+        }
+    }    
+    main{    
+        height: 100vh;
+        .contenedor{
+            
+            grid-template-columns: 0.6fr 1fr;
+            grid-template-rows: 50% 55%;
+            gap: 1rem;
+            margin-top: 4rem;
+            .vivero-dos{
+                display: block;
+                grid-column: span 2;
+                margin-top: 2rem;
+                div{
+                    p{
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                    line-height: 1.8rem;
+                    }
+                }    
+            }        
+        }
+    }
+    footer{
+        div{
+            img{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }    
+
+/*vivero*/
+/*main*/    
+    .main-dos{
+        height: 260vh;            
+        .main-vivero{                
+            height: 100vh;
+            grid-template-rows: repeat(4, 55%);   
+            gap: 1rem;             
+            .texto{
+                display: grid;
+                grid-template-columns: 0.4fr 0.6fr;
+                grid-template-rows: 60%;
+                height: 70vh;
+                justify-content: center;                    
+                align-content: center;                                       
+                p{                    
+                text-align: center;
+                   line-height: 1.5rem;
+                   font-size: 1.2rem;
+                }
+                .img-produccion{
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;  
+                    }                                   
+                } 
+            }
+        }
+    }        
+
+    /*footer*/
+    footer{
+        div{
+            img{
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    }
+    /*variedades*/
+    .main-tres{
+         height: 135vh;
+        .variedades-cactus{
+            height: 105vh;
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: 45% 45%;           
+            gap: 2rem;                
+            .especies{
+                .img-mobile{
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;   
+                    }                      
+                }                                                    
+            }                                                                
+        }        
+    } 
+    /*tienda*/
+    .main-cuatro{
+        height: 130vh;
+        .variedades-cactus{
+            height: 105vh;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 45% 45%;
+            gap: 1rem;
+            padding: 1rem 2rem 4rem 2rem;
+            .especies{
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;    
+                }                
+            }
+        }
+    }
+    .pago{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;       
+    }
+    /*contacto*/
+
+    .main-cinco{
+        height: 140vh;
+        .contacto{
+            display: grid;            
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 80% 70%;            
+            justify-items: center;
+            align-items: start;            
+            .formulario{
+                padding-top: 1.5rem;
+            }                                                                   
+            .mapa{                
+                display: block;                              
+                grid-column: span 2;
+                padding-top: 6rem;    
+            }            
+        }
+    }
+}
+
+/*mq desktop*/
+/*home*/
+@media screen and (min-width: 1024px){
+    .menu{    
+        .menu-dos{        
+            .submenu{ 
+                display: flex; 
+                justify-content: center;                                
+                .listas{
+                    gap: 3rem;                    
+                }
+            }
+        }
+    }                      
+    main{
+        height: 130vh;
+        h1{
+           font-size: 3rem; 
+        }
+        .contenedor{
+            margin-top: 2rem;
+            height: 100vh;
+            grid-template-columns:repeat(3, 1fr) ;
+            grid-template-rows: 35% 55%;
+            .vivero{
+                grid-column: span 2;
+            }
+            .vivero-dos{
+                grid-column: span 2;
+                margin-top: 1.5rem;
+            }
+            .vivero-tres{
+                display: block;
+                grid-column: span 1;
+                margin-top: 1.5rem;
+            }
+            div{
+                p{
+                font-size: 1.5rem;
+                font-weight: 600;
+                line-height: 2rem;
+                }
+            }            
+        }
+    }
+    footer{
+        div{
+            align-items: center;
+            img{
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+    } 
+    /*vivero*/        
+    /*main*/ 
+    .main-dos{
+        height: 190vh;
+        h1{
+            font-size: 3rem; 
+        }
+        .main-vivero{
+            height: 130vh;
+            margin: 2rem 4rem 2rem 4rem;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 65% 40%;
+            gap: 1rem;
+            .texto-uno{
+                grid-template-columns: 1fr;
+                grid-template-rows: 20% 70%;
+                height: 80vh;
+                grid-column: span 3;                                                   
+            }
+            .texto-dos{
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 50% 80%;
+                padding-top: 7rem;                   
+            }
+            .texto-tres{
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 50% 80%;
+                padding-top: 7rem; 
+            }
+            .texto-cuatro{
+                grid-template-columns: 0.8fr;
+                grid-template-rows: 50% 80%;
+                padding-top: 7rem; 
+            }
+            .texto{
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    line-height: 1.5rem;    
+                }                    
+            }                
+        }
+    } 
+    /*variedades*/    
+    .main-tres{
+        height: 170vh;
+        h1{
+            font-size: 3rem; 
+        }
+        .variedades-cactus{
+            height: 120vh;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 55%);
+            gap: 2rem;            
+            .especies{
+                display: grid;
+                grid-template-columns: 0.7fr 0.7fr;
+                grid-template-rows: 40% 40% 10;
+                .img-desktop{                    
+                    display: block;
+                    transition: 0.5s;                      
+                    img{
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;                        
+                        border-radius: 8px;
+                        box-shadow: 0px 15px 15px rgba(168, 166, 166, 0.7);
+                    }
+                }
+                .img-desktop:hover{
+                    transform: scale(1.2);      
+                    transition: 0.5s;
+                       
+                }                                                                                 
+                .img-mobile{
+                    display: none;
+                }                                                        
+                .cartelito{
+                        grid-column: span 2;
+                        margin-bottom: 3rem;                    
+                }                                               
+            }
+        }
+    }
+    /*tienda*/ 
+    .main-cuatro{
+        height: 145vh;
+        h1{
+            font-size: 3rem; 
+        }
+        .variedades-cactus{
+            height: 120vh;
+               .especies{
+                img{
+                    transition: 0.5s; 
+                }
+                img:hover{
+                    transform: scale(1.2);      
+                    transition: 0.5s;
+                }                
+            }
+        }
+    }
+    /*contacto*/
+    .main-cinco{
+        height: 130vh;
+        h1{
+            font-size: 3rem; 
+        }
+        .contacto{
+            padding-top: 3rem;
+            p{
+                font-size: 1.5rem;
+            }
+            .formulario{
+                label{
+                    font-size: 1.3rem;
+                }
+            }            
+        }
+    }
+}   
+    
+
